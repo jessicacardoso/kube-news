@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: CI-CD
 
 # Controls when the workflow will run
 on:
@@ -33,7 +33,7 @@ jobs:
       - name: Build and push Docker images
         uses: docker/build-push-action@v3.0.0
         with:
-          file: ./src/Docerfile
+          file: ./src/Dockerfile
           context: ./src
           push: true
           tags: |
