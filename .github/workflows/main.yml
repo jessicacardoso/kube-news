@@ -38,5 +38,5 @@ jobs:
           push: true
           tags: |
             jessicacardoso/kube-news:latest
-            jessicacardoso/kube-news:${{github.run_number}}
+            jessicacardoso/kube-news:v${{github.run_number}}
       
